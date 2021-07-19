@@ -1,0 +1,485 @@
+/*
+	Estilos del inicio -Do Note
+
+	Jx5
+	___________________________________
+*/
+
+/*-----barra de navegacion-----*/
+
+header nav{
+	background: #fff;
+	display: flex;
+	flex-direction: row;
+	border-radius: 20px;
+	justify-content: center;
+}
+
+header nav ul{
+	margin: 0 40px;
+}
+
+/* barra de menu */
+header nav .ul-div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 100px;
+}
+
+header nav ul .menu{
+	background: none;
+	padding: 2px;
+}
+
+header nav ul .menu:hover{
+	background: #00dbff;
+}
+
+header nav ul .menu .barra{
+	width: 30px;
+	height: 5px;
+	background: #000;
+	display: block;
+	margin: 6px;
+}
+
+/*
+    barra de menu, cuenta
+*/
+
+#div-menu, #div-cuenta{
+    background: #645757b8;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.barra-menu, .barra-cuenta{
+    background: #fff;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.barra-menu{
+	float: left;
+}
+
+.barra-cuenta{
+    float: right;
+    overflow: auto;
+}
+
+@keyframes barraMenu{
+	0%{
+		position: relative;
+		right: 400px;
+	}
+
+	100%{
+		position: relative;
+		right: 0px;
+	}
+}
+
+@keyframes barraCuenta{
+	0%{
+		position: relative;
+		left: 400px;
+	}
+
+	100%{
+		position: relative;
+		left: 0px;
+	}
+}
+
+#quitar_menu, #quitar_cuenta{
+    float: right;
+    margin: 0px 20px 0px 0px;
+    padding: 7px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #978989;
+}
+
+#quitar_menu:hover, #quitar_cuenta{
+    color: #4b5157;
+}
+
+/* barra de menu */
+
+.barra-menu .content div h2{
+    margin: 50px 20px 20px;
+    font-size: 30px; 
+    border-bottom: 2px solid #00ceec;
+}
+
+.barra-menu .options, .ul-ayuda {
+    margin: 20px;
+    display: block;
+    text-align: justify;
+}
+
+.barra-menu .options li, .ul-ayuda li{
+    margin: 40px;
+    color: #6c5c5c;
+    list-style: none;
+    transition: all 1s;
+    font-size: 16px;
+}
+
+.barra-menu .options li:hover, .ul-ayuda li:hover{
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* barra de cuenta */
+.barra-cuenta .content .face{
+	clear: both;
+}
+
+.barra-cuenta .content .face img{
+	border-radius: 100%;
+	border: 10px solid #00dbff;
+	box-shadow: 2apx 2px 2px #c1c1f1;
+}
+
+.barra-cuenta .datos{
+	margin: 40px;
+}
+
+.barra-cuenta .datos div{
+	margin: 30px;
+	padding: 10px;
+	font-size: 16px;
+	color: rgb(108 92 92);
+	border-bottom: 2px solid #b1b0b0;
+	transition: all 1s;
+}
+
+.barra-cuenta .datos div:hover{
+	border-bottom: 2px solid #564a4a;
+}
+
+#modifDatos, #cerrar_S{
+	font-size: 12px;
+	color: #a8b5bd;
+	border: 3px solid #a8b5bd;
+	padding: 10px;
+	border-radius: 10px;
+	transition: all 1s;
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+	cursor: pointer;
+}
+
+#modifDatos:hover, #cerrar_S:hover{
+	border: 3px solid #564a4a;
+	color: #564a4a
+}
+
+/*
+	elementos del los datos de ayuda
+*/
+
+.p_ayuda{
+	margin: 10px;
+	text-align: justify;
+	font-size: 16px;
+}
+
+.img_ayuda{
+	margin: 20px;
+}
+
+.a_ayuda{
+    margin: 10px;
+    display: block;
+}
+
+/* dia */
+.dia{
+	font-size: 20px;
+}
+
+/* barra de notificaciones */
+header nav .ul-div .opc{
+	background: none;
+	padding: 2px 12px;
+}
+
+header nav .ul-div .opc:hover{
+	background: #00dbff;
+}
+
+header nav .ul-div .opc > .circ{
+	width: 10px;
+	height: 5px;
+	margin: 6px;
+	border-radius: 100%;
+	background: #000;
+	display: block;
+}
+
+/*
+    ----elimionar notas---
+*/
+
+.A{
+    border: 3px solid red;
+    padding: 10px
+}
+
+.div-elim{
+    position: fixed;
+	bottom: 100px;
+	right: 30px;
+    padding: 4px;
+	background: #fff;
+	border-radius: 10px;
+	border: 2px solid #000;
+}
+
+.div-elim img{
+	border-radius: 10px;
+	transition: all 0.3s;
+}
+
+.div-elim img:active{
+	width: 30px;
+}
+
+/*-----imagen de agg nota-------*/
+.div-agg{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background: #fff;
+	padding: 4px;
+	border-radius: 10px;
+	border: 2px solid #000;
+}
+
+.div-agg .img-agg{
+	border-radius: 10px;
+	transition: all 0.3s;
+}
+
+.div-agg .img-agg:active{
+	width: 30px;
+}
+
+/*---agg notas----*/
+#contenido_nota_agg{
+	max-width: 80%;
+	max-height: 200px;
+	min-width: 60%;
+	min-height: 100px;
+}
+
+#color_nota{
+	margin: 15px;
+}
+
+#msg{
+	margin: 10px;
+	color: #ec1717;
+}
+
+/*----NM-----*/
+.M-A{
+    border: 3px solid #59b0be;
+    padding: 5px;
+}
+
+.M_D{
+    border: none;
+    padding: none;
+}
+
+/*----Notas----*/
+.N0T section #div_notas{
+    position: relative;
+	display: flex;
+	background: none;
+	margin: 10px;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.div_n{
+    perspective: 700px;
+}
+
+.div_n_NN{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_n_NN img{
+    margin: 10px;
+	padding: 40px;
+	width: 300px;
+	box-shadow: 2px 3px 3px 2px #5e5454;
+	max-width: 300px;
+	max-height: 300px;
+	overflow: auto;
+	color: #fff;
+    transition: all 1s;
+}
+
+.N0T section .nota{
+	margin: 10px;
+	padding: 40px;
+	width: 300px;
+	box-shadow: 2px 3px 3px 2px #5e5454;
+	max-width: 300px;
+	max-height: 300px;
+	overflow: auto;
+	color: #fff;
+    transition: all 1s;
+    animation: nota 1s;
+						
+}
+
+.N0T section .nota:hover{
+    transform: scale(1.1);
+     position: relative;
+}
+
+.barra-mover{
+    float: right;
+}
+
+@keyframes nota{
+    0%{
+        position: relative;
+        bottom: 100px;
+        transform: rotateX(90deg);
+    }
+    
+    100%{
+        position: relative;
+        bottom: 0;
+        transform: rotateX(0deg);
+    }
+}
+
+.btn-quitar-nota{
+	float: right;
+	padding: 3px;
+	background: none;
+	border: 1.5px solid #fff;
+	border-radius: 10px;
+	color: #fff;
+}
+
+.nombre-notas{
+	margin: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: oblique;
+}
+
+.cont-notas{
+	margin: 10px;
+	font-size: 14px;
+}
+
+.fecha-notas{
+	margin-top: 10px;
+	float: right;
+    font-weight: bold; 
+	font-size: 16px;
+}
+
+
+@media screen and (max-width: 800px){
+    .wrapper{
+        margin: 10px;
+        width: 95%;
+    }
+    
+    header nav ul{
+        margin: 0 10px;
+    }
+    
+    header nav .ul-div{
+        margin: 0 8px;
+    }
+    
+    .barra-menu{
+        width: 100%;
+    }
+    
+    .barra-cuenta{
+        width: 100%;
+    }
+    
+    .dia{
+        font-size: 12px;
+    }
+    
+    .s-form{
+        width: 90%;
+    }
+    
+    .div-agg .img-agg{
+        width: 40px;
+    }
+    
+    .div-elim{
+        bottom: 90px;
+    }
+    
+    .div-elim img{
+        width: 40px;
+    }
+    
+    /*
+        notas
+    */
+    
+    .N0T section .nota{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .nombre-notas{
+        font-size: 25px;
+    }
+    
+    .cont-notas{
+        font-size: 14px;
+    }
+    
+    .fecha-notas{
+        font-size: 12px;
+    }
+    
+    /*
+        cuando no hay notas
+    */
+    
+    .div_n_NN img{
+        width: 230px;
+    }
+}

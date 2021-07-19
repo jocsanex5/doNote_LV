@@ -1,0 +1,171 @@
+<!-- By Jx5 -->
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Do Note</title>
+	<meta name="description" content="Organizador web para guardar tareas o notas a realizar">
+	<meta name="keywods" content="Jx5, jocsanex5, Do Note, tareas, notas, organizador">	
+	<link rel="shortcut icon" href="recursos/favicon2.png" type="image/x-icon">	
+	<!-- css -->
+	<link rel="stylesheet" href="css/generales.css">
+	<link rel="stylesheet" href="css/estilosInicio.css">
+</head>
+<body> 
+	<div class="wrapper">
+		<div>   
+            <section id="loader">
+				<div class="div-loader">
+					<div class="uno">
+						<div class="letra"></div>
+						<div class="letra"></div>
+						<div class="letra"></div>
+						<div class="letra"></div>
+					</div>
+
+					<div class="dos"></div>
+				</div>
+			</section>
+
+			<div>
+				<header>
+					<nav>
+						<div  class="ul-div">  
+							<ul>
+								<div class="menu" id="menu">
+									<span class="barra"></span>
+									<span class="barra"></span>
+									<span class="barra"></span>
+								</div>
+							</ul>
+						</div>
+
+						<div class="ul-div">
+							<ul>
+								<div class="div-dia">
+									<span class="dia">
+										Hoy
+									</span>
+								</div>
+							</ul>
+						</div>
+
+						<div class="ul-div">
+							<ul>
+								<div>
+									<img src="recursos/lupa.png" width="30px" alt="">
+								</div> 
+							</ul>
+						</div>
+
+						<div class="ul-div">
+							<ul>
+								<div class="opc" id="cuenta">
+									<span class="circ"></span>
+									<span class="circ"></span>
+									<span class="circ"></span>
+								</div>
+							</ul>
+						</div>
+					</nav>
+				</header>
+			</div>
+
+			<div class="NV" id="div-menu">
+				<section class="barra-menu" id="barra-menu">
+					<div class="content">
+						<div>
+							<button id="quitar_menu">X</button>
+						</div>
+
+						<div>
+							<h2>Menu</h2>
+						</div>
+
+						<div>
+							<ul class="options">
+								<li id="ayuda">Ayuda</li>
+								<li id="aCD">A cerca de Do-Note</li>
+								<li id="mC">Mi cuenta</li>
+								<li id="mDJX5">Mas de Jx5</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+			<div class="NV" id="div-cuenta">
+			    <section class="barra-cuenta" id="barra-cuenta">
+			        <div class="content">
+			        	<div>
+							<button id="quitar_cuenta">X</button>
+						</div>
+
+			            <div>
+			                <div class="face">
+			                	<img src="recursos/usuario.jpg" width="200px" alt="">
+			                </div>
+			            </div>
+			            
+			            <div class="datos">
+			                <div class="nombre">
+			                	<span id="nombre"></span>
+			                </div>
+
+			                <div class="correo">
+			                	<span id="correo"></span>
+			                </div>
+
+			                <div class="contra" id="pass">
+			                	*********
+			                </div>
+			            </div>
+
+			            <div class="opsdecuenta">
+			            	<div>
+			            		<span id="modifDatos">
+			            			Modificar datos de usuario
+			            		</span>
+			            	</div>
+			            </div>
+
+			            <div class="opsdecuenta">
+			            	<div>
+			            		<span id="cerrar_S">
+			            			Cerrar Secion
+			            		</span>
+			            	</div>
+			            </div>
+			        </div>
+			    </section>
+			</div>
+
+			<div class="N0T">
+				<section>
+					<div class="div_notas" id="div_notas"></div>
+				</section>
+			</div>
+
+			<div class="div-elim">
+				<div class="elim">
+					<img src="recursos/quitar-boton-redondo.svg" class="D" id="btn-elim" width="50px" alt="">
+				</div>
+			</div>
+
+			<div class="div-agg">
+				<div class="agg">
+					<img id="btn-agg-nota" class="img-agg" src="recursos/mas.png" width="50px" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="https://kit.fontawesome.com/f94f579024.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+	<script src="js/sess.js"></script>
+	<script src="js/caractersJS.js"></script>
+	<script src="js/main_inicio.js"></script>
+</body>
+</html>

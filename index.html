@@ -1,0 +1,170 @@
+<!-- By Jx5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Do Note</title>
+	<meta name="description" content="Organizador web para guardar tareas o notas a realizar">
+	<meta name="keywods" content="Jx5, jocsanex5, Do Note, tareas, notas, organizador">	
+	<link rel="shortcut icon" href="recursos/favicon2.png" type="image/x-icon">	
+	<!-- css -->
+	<link rel="stylesheet" href="css/generales.css">
+	<link rel="stylesheet" href="css/estilosIndex.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+				<!-- loader de carga -->
+			<section id="loader">
+				<div class="div-loader">
+					<div class="uno">
+						<div class="letra"></div>
+						<div class="letra"></div>
+						<div class="letra"></div>
+						<div class="letra"></div>
+					</div>
+
+					<div class="dos"></div>
+				</div>
+			</section>
+		
+				<!-- bienvenida al usuario -->
+			<section class="princ">
+				<div class="titulo">
+					<div>
+						<h1 class="h2_titulo">
+							<span class="do">Do</span> <span class="note">Note</span>
+						</h1>
+					</div>
+				</div>
+
+					<div class="bienvenida">
+						<div>
+							<h2>Bienvenido!!!!</h2>
+						</div>
+					</div>	
+
+				<div class="carousel">
+					<div class="carousel__contenedor">
+						<button class="carousel__anterior" aria-label="anterior">  
+						    <i class="fas fa-chevron-left"></i>
+						</button>
+						
+							<div class="carousel__lista">
+								<div class="carousel__elemento">
+									<img src="recursos/nota-index.jpg" class="c1" id="img__slider" width="500px" height="300px" alt="">
+								</div>
+
+								<div class="carousel__elemento">
+									<img src="recursos/nota2-index.jpg" class="c1" id="img__slider" width="500px" height="300px" alt="">
+								</div>
+
+								<div class="carousel__elemento">
+									<img src="recursos/logo.png" class="c1" id="img__slider" width="500px" height="300px" alt="">
+								</div>
+
+								<div class="carousel__elemento">
+									<img src="recursos/nota3-index.jpg" class="c1" id="img__slider" width="500px" height="300px" alt="">
+								</div>
+
+								<div class="carousel__elemento">
+									<img src="recursos/nota4-index.jpg" class="c1" id="img__slider" width="500px" height="300px" alt="">
+								</div>
+							</div>
+
+                        <button class="carousel__siguiente" aria-label="siguiente">
+					    	<i class="fas fa-chevron-right"></i>
+						</button>
+					</div>
+
+					<div class="carousel__indicadores" role="tabList"></div>
+				</div>
+			</section>
+
+			<section class="ops">
+				<div>
+					<button id="ingresar">Ingresar</button>
+				</div>
+
+				<div>
+					<button id="registrar">Registrarse</button>
+				</div>
+			</section>
+
+				<!-- formulario ingresar (f-i) -->
+			<section class="f-i form" id="f_i">  
+				<div class="div-f-i">
+					<form method="post" id="f-i-f">
+						<div>
+							<label for="nombre-f-i" class="label-titulo-form">Ingresa tus datos de Usuario</label>
+						</div>
+
+							<div>
+								<input type="text" name="nombre" class="input-form" id="nombre-f-i" placeholder="Nombre" required="" autocomplete="off">
+							</div>
+
+								<div>
+									<input type="password" class="input-form" name="contra" id="contra-f-i" placeholder="Contraseña" required="" autocomplete="off">
+								</div>
+
+							<div>
+								<input class="s-form" id="s_ingreso" name="submit-f-i" type="submit" value="Entrar">
+							</div>
+
+						<div>
+							<span class="span-form" id="span_regis">No tienes una cuenta?</span>
+						</div>
+					</form>
+				</div>
+			</section>
+
+				<!-- formulario registro (fr) -->
+			<section class="f-r form" id="f_r">
+				<div class="div-f-r">
+					<form method="post" id="f-r-f">
+						<div>
+							<label for="nombre-f-r" class="label-titulo-form">Crea tu cuenta gratuita!!!</label>
+						</div>
+
+							<div>
+								<input type="text" required="" class="input-form" name="nombre" id="nombre-f-r" placeholder="Nombre" autocomplete="off">
+							</div>
+
+								<div>
+									<input type="email" required="" class="input-form" name="gmail" id="gmail-f-r" placeholder="G-mail"  autocomplete="off">
+								</div>
+
+							<div>
+								<label class="label-inst-form" for="contra-f-r">Define una Contraseña</label>
+							</div>
+
+							<div>
+								<input type="password" required="" class="input-form" name="contra" id="contra_-f-r" autocomplete="off">
+							</div>
+
+								<div>
+									<input type="password" required="" class="input-form" name="contra" id="contra-f-i"  autocomplete="off">
+								</div>
+
+							<div>
+								<input class="s-form" id="s_registro" name="submit-f-r" type="submit" value="Registrarse">
+							</div>
+
+						<div>	
+							<span class="span-form" id="span_ingre">Inicia Secion</span>
+						</div>
+					</form>
+				</div>
+			</section>
+	</div>
+
+	<!-- js -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="js/caractersJS.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+	<script src="js/main_index.js"></script>
+</body>
+</html>
