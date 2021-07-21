@@ -739,6 +739,8 @@
 					<form id="form_busc">
 						<input type="text" autocomplete="off" class="input-form" name="texto" id="texto_busc">
 
+						<label>Ingresa las palabras claves para encontrar tus notas</label>
+
 						<input type="submit" class="s-form" value="Buscar">
 					</form>
 				`
@@ -807,6 +809,9 @@
 							</div>`;
 
 					div_results.appendChild(nota);
+
+					colorQuitarNota();
+					eliminarNotasAID();
 				}
 
 				//0.1
@@ -839,6 +844,7 @@
 					});
 
 					document.querySelector('.div-agg').style.display = 'none';
+					document.querySelector('.div-elim').style.display = 'none';
 					document.querySelector('.div-mostAll').style.display = 'block';
 
 					document.querySelector('.div-mostAll').addEventListener('click', ()=>{
