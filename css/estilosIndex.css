@@ -1,0 +1,205 @@
+/*
+	Estilos del index -Do Note
+
+	Jx5
+	___________________________________
+*/
+
+/*-----Bienvenida al usuario------*/
+
+/* titulo */
+.princ .titulo div h1{
+	margin: 20px;
+	font-size: 80px;
+	letter-spacing: 0.117em;
+	font-weight: 600;
+	font-style: normal;
+	border-bottom: 3px solid #525657;
+}
+
+.do{color: #c5c2c5;}
+
+.note{color: #10555a;}
+
+/* bienvenida al usuario */
+.bienvenida div h2{
+	margin: 10px;
+	font-size: 33px;
+	font-weight: 300;
+	line-height: 1.2;
+	letter-spacing: 0.013em;
+	color: #312b2bc4;
+}
+
+/* imgenes de notas */
+.princ .img-notas img{
+  border-radius: 10px;
+	box-shadow: 2px 2px 8px 2px #000;
+	margin: 20px;
+}
+
+/*-----btns de opciones------*/
+.ops div button{
+	margin: 10px;
+	padding: 20px;
+	width: 400px;
+	border-radius: 20px;
+	background: white;
+	border: none;
+	font-size: 25px;
+	line-height: 1.1;
+	letter-spacing: 0.019em;
+	color: #525657;
+	transition: all 0.5s;
+}
+
+.ops div button:hover{
+	border: none;
+	box-shadow: 2px 2px 8px 2px #9f9a9a;
+}
+
+/* animacion de btns */
+@keyframes btns{
+	0%{ opacity: 2; }
+	100%{ opacity: 0; font-size: 10px; }
+}
+
+/*-----FORMULARIOS------*/
+
+/* formulario de ingreso */
+.f-i{display: none;}
+
+/* formulario de registro */
+.f-r{display: none;}
+
+/*-----Msg al asuario------*/
+.msg #txt{
+	float: right;
+	margin-top: -20px;
+	margin-right: 60px; 
+	display: block;
+	font-size: 19px;
+	transition: all 1s;
+}
+
+
+
+/*-----Errores del sistema------*/
+.errs div div h3{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	background: #1e1e1e40;
+	padding: 20px;
+	font-size: 17px;
+	border-radius: 10px;
+}
+
+/*-----Estilos del slider------*/
+
+.carousel__contenedor{
+    
+    position: relative;
+}
+
+.carousel__anterior, .carousel__siguiente{
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    background: none;
+    opacity: 20%;
+}
+
+.carousel__anterior{
+    left: 300px;
+}
+
+.carousel__siguiente{
+    right: 300px;
+}
+
+.carousel__lista{
+    overflow: hidden;
+}
+
+.carousel__lista img{
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/*
+    Dispisitivos moviles
+*/
+
+@media screen and (max-width: 800px){
+    
+    .wrapper{
+        margin: 10px;
+        width: 95%;
+        padding: 25% 0px;
+    }
+    
+    /*
+        titulo 
+    */
+    
+    .do{
+        margin: auto;
+      font-size: 30px;
+    }
+    
+    .note{
+        margin: auto;
+      font-size: 40px;  
+    }
+    
+    /*
+        imgs del slider
+    */
+    
+    .img-notas img{
+        width: 250px;
+        height: 150px;
+        margin: 20px 0px;
+    }
+    
+    .ant, .sig{
+        margin: auto;
+    }
+    
+    .ops div button{
+        width: 80%;
+    }
+    
+    .form{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: auto;
+        border-radius: 10px;
+    }
+    
+    .s-form{
+        width: 90%;
+    }
+    
+    .carousel__anterior{
+       left: 0px;
+    }
+
+    .carousel__siguiente{
+        right: 0px;
+    }
+    
+    .carousel__lista img{
+        width: 280px;
+        height: 200px;
+    }
+}
