@@ -376,14 +376,13 @@ header nav .ul-div .opc > .circ{
 	max-height: 300px;
 	overflow: auto;
 	color: #fff;
-    transition: all 1s;
+    transition: all 0.5s;
     animation: nota 1s;
 						
 }
 
 .N0T section .nota:hover{
     transform: scale(1.1);
-     position: relative;
 }
 
 .barra-mover{
@@ -435,6 +434,17 @@ header nav .ul-div .opc > .circ{
 /*
     resultados de busqueda...
 */
+
+#form_busc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form_busc label{
+    font-size: 12px;
+}
 
 
 @media screen and (max-width: 800px){
