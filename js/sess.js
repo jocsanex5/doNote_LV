@@ -12,7 +12,7 @@
 			___________________________________________
 		*/
 
-		if(sessionStorage.getItem('Session') == null){
+		if(localStorage.getItem('Nombre') == null){
 
 			window.location = 'index.html';
 		}
