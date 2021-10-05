@@ -400,7 +400,6 @@
 									<option value="#e8c129bf">Amarillo</option>
 									<option value="#9d0c0cbf">Rojo</option>
 									<option value="#a73089">Rosado</option>
-									<option value="#fff">Blanco</option>
 								</select>
 							</div>	
 						</div>	
@@ -437,7 +436,8 @@
 					});
 				} 
 			});
-
+			
+                        /*
 			contenido_nota_agg.addEventListener('keyup', (e)=>{
 
 				if(validarCaracteres(e).error){ //existe un error 
@@ -453,7 +453,7 @@
 						timerProgressBar : true
 					});
 				} 
-			});
+			});*/
 
 			//agregar datos a indexedDB...
 
